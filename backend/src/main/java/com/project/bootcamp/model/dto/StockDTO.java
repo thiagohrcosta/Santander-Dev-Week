@@ -1,13 +1,22 @@
 package com.project.bootcamp.model.dto;
 
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 public class StockDTO {
 
     private Long id;
+
+    @NotNull
     private String name;
+
+    @NotNull
     private Double price;
+
+    @NotNull
     private LocalDate date;
+
+    @NotNull
     private Double variation;
 
     public Long getId() {
